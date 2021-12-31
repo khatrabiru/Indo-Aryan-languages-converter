@@ -3,7 +3,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const Languages = require('./models/languages');
 
-mongoose.connect('mongodb://localhost:27017/indo-aryan-test1', {
+mongoose.connect('mongodb://localhost:27017/indo-aryan-test', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -34,7 +34,10 @@ app.get('/add-loop', async (req, res,) => {
     let English = require('./words/english.js').english;
     let Hindi = require('./words/hindi.js').hindi;
     for(let i = 0; i < 1000; i++ ) {
-        const languages = new Languages({english: English[i], hindi: Hindi[i]});
+        const languages = new Languages({
+            english: English[i], 
+            hindi: Hindi[i]
+        });
         await languages.save();
         console.log(languages);
     }
@@ -47,7 +50,7 @@ app.get('/add-loop', async (req, res,) => {
 // });
 
 app.get('/search/:english', async (req, res,) => {
-    Languages.findOne({english: 'banana'}, function (err, result) {
+    Languages.findOne({english: req.params.english}, function (err, result) {
         if (err){
             console.log(err);
         }
@@ -58,6 +61,11 @@ app.get('/search/:english', async (req, res,) => {
     });
 });
 
+
+app.get('/top-5-search/:english', async (req, res,) => {
+    const languages = await Languages.find({english: {$regex: req.params.english}}).limit(5);
+    console.log(languages);
+});
 
 app.listen(3000, () => {
     console.log('Serving on port 3000')
