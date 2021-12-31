@@ -22,20 +22,12 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-
-
-app.get('/add-sample', async (req, res,) => {
-    const languages = new Languages({english: 'banana', hindi: 'kera'});
-    await languages.save();
-    console.log(languages);
-});
-
 app.get('/add-loop', async (req, res,) => {
     let English = require('./words/english.js').english;
     let Hindi = require('./words/hindi.js').hindi;
-    for(let i = 0; i < 1000; i++ ) {
+    for (let i = 0; i < 1000; i++) {
         const languages = new Languages({
-            english: English[i], 
+            english: English[i],
             hindi: Hindi[i]
         });
         await languages.save();
@@ -43,27 +35,20 @@ app.get('/add-loop', async (req, res,) => {
     }
 });
 
-// app.get('/search/:id', async (req, res,) => {
-//     const languages = await Languages.findById(req.params.id);
-//     res.render('home', { languages });
-//     console.log(languages);
-// });
-
 app.get('/search/:english', async (req, res,) => {
-    Languages.findOne({english: req.params.english}, function (err, result) {
-        if (err){
+    Languages.findOne({ english: req.params.english }, function (err, result) {
+        if (err) {
             console.log(err);
         }
-        else{
+        else {
             res.render('home', { result });
             console.log(result);
         }
     });
 });
 
-
 app.get('/top-5-search/:english', async (req, res,) => {
-    const languages = await Languages.find({english: {$regex: req.params.english}}).limit(5);
+    const languages = await Languages.find({ english: { $regex: req.params.english } }).limit(5);
     console.log(languages);
 });
 
