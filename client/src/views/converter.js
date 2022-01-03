@@ -10,10 +10,10 @@ const Converter = () => {
 
     const [inputText, setInputText] = useState("");
     const [filtered, setFiltered] = useState([]);
-    const [converted, setConverted] = useState([]);
+    const [converted, setConverted] = useState({});
 
     useEffect(() => {
-    }, [converted])
+    }, converted)
 
     const handleChangeInput = event => {
         setInputText(event.target.value);
@@ -36,15 +36,21 @@ const Converter = () => {
     };
 
     const submitHandler = (e) => {
-        axios.get('http://localhost:3001/top/ball')
+        axios.get('http://localhost:3001/search/' + inputText)
             .then(res => {
-                setConverted(res.data)
+                console.log(res.data);
+                if(res.data) {
+                    setConverted(res.data);
+                } else {
+                    setConverted({});
+                }
             })
     };
 
     const resetHandler = (e) => {
         setInputText("")
-        setConverted([])
+        setConverted({})
+        setFiltered([]);
     }
 
     return (

@@ -31,22 +31,21 @@ const Chart = ({ converted }) => {
         >
             <TreeNode>
                 <TreeNode label={<StyledNode>WESTERN INDIC</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Punjabi</StyledLeaf>} />
-                    <TreeNode label={<StyledLeaf>Gujarati</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Punjabi: {converted.punjabi}</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Gujarati: {converted.gujarati}</StyledLeaf>} />
                 </TreeNode>
                 <TreeNode label={<StyledNode>HINDUSTANI</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Hindi {converted.hindi}</StyledLeaf>} />
-                    <TreeNode label={<StyledLeaf>Urdu</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Hindi: {converted.hindi}</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Urdu: {converted.urdu}</StyledLeaf>} />
                 </TreeNode>
                 <TreeNode label={<StyledNode>PAHARI</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Nepali {converted.nepali}</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Nepali: {converted.nepali}</StyledLeaf>} />
                 </TreeNode>
                 <TreeNode label={<StyledNode>MAGADHI</StyledNode>} >
-                    <TreeNode label={<StyledLeaf>Bengali {converted.bengali}</StyledLeaf>} />
-                    <TreeNode label={<StyledLeaf>Maithilli</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Bengali: {converted.bengali}</StyledLeaf>} />
                 </TreeNode>
                 <TreeNode label={<StyledNode>MAHARASHTRI</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Marathi</StyledLeaf>} />
+                    <TreeNode label={<StyledLeaf>Marathi: {converted.marathi}</StyledLeaf>} />
                 </TreeNode>
             </TreeNode>
 
