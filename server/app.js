@@ -56,7 +56,6 @@ app.get('/search/:english', async (req, res,) => {
 
 app.get('/top/:english', async (req, res,) => {
     const result = await Languages.find({ english: { $regex: req.params.english } }).limit(5);
-    // console.log(result);
     res.send( result );
 });
 
