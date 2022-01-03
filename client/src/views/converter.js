@@ -8,28 +8,35 @@ const Converter = () => {
 
     const { Search } = Input;
 
-
     const [inputText, setInputText] = useState("");
+    const [filtered, setFiltered] = useState([]);
     const [converted, setConverted] = useState([]);
 
     useEffect(() => {
     }, [converted])
 
-    const handleChange = event => {
+    const handleChangeInput = event => {
         setInputText(event.target.value);
+        handleChangeFiltered();
     };
-    const lowercased = inputText.toLowerCase();
-    const filteredData = () => {
-        if (inputText === "") return [];
+    const handleChangeFiltered = () => {
+        if (inputText === "") {
+            setFiltered([]);
+        }
         else {
-            var cnt = 0;
-            var arr = [];
-            return arr;
+            axios.get('http://localhost:3001/top/' + inputText)
+                .then(res => {
+                    var arr = [];
+                    for(let i = 0; i < res.data.length; i++) {
+                        arr.push(String(res.data[i].english));
+                    }
+                    setFiltered(arr);
+                })
         };
     };
 
     const submitHandler = (e) => {
-        axios.get('')
+        axios.get('http://localhost:3001/top/ball')
             .then(res => {
                 setConverted(res.data)
             })
@@ -41,12 +48,11 @@ const Converter = () => {
     }
 
     return (
-
         <div className="App">
-            <Search value={inputText} placeholder="Place a English word" onChange={handleChange} enterButton onSearch={submitHandler} required />
+            <Search value={inputText} placeholder="Place a English word" onChange={handleChangeInput} enterButton onSearch={submitHandler} required />
             <Button onClick={resetHandler}>Reset</Button>
             <ul className="list-group">
-                {filteredData().map(item => (
+                {filtered.map(item => (
                     <li className="list-group-item" onClick={() => setInputText(item)} data-category={item} key={item}>{item}</li>
                 ))}
             </ul>
