@@ -4,14 +4,14 @@ import { Tree, TreeNode } from "react-organizational-chart";
 
 const StyledNode = styled.div`
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   display: inline-block;
-  border: 5px solid #ff9900;
+  border: 3px solid #ff9900;
 `;
 const StyledLeaf = styled.div`
   padding: 20px;
-  border: 3px solid #33ccff;
-  border-radius: 4px;
+  border-radius: 15px;
+  border: 2px solid #33ccff;
   color: #00cc44;
   &:hover {
     color: #006600;
@@ -26,7 +26,7 @@ const Chart = ({ converted }) => {
             lineWidth={"2px"}
             lineColor={"green"}
             lineBorderRadius={"5px"}
-            label={<StyledNode>INDO-ARYAN</StyledNode>}
+            label={<StyledNode>INDO-ARYAN LANGUAGES</StyledNode>}
         >
             <TreeNode>
 
