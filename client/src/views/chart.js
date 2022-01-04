@@ -3,19 +3,18 @@ import styled from "@emotion/styled";
 import { Tree, TreeNode } from "react-organizational-chart";
 
 const StyledNode = styled.div`
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
   display: inline-block;
-  border: 1px solid red;
+  border: 5px solid #ff9900;
 `;
 const StyledLeaf = styled.div`
-  padding: 5px;
-  display: inline-block;
-  border: 2px solid black;
+  padding: 20px;
+  border: 3px solid #33ccff;
   border-radius: 4px;
-  color: black;
+  color: #00cc44;
   &:hover {
-    color: lightgreen;
+    color: #006600;
   }
 `;
 
@@ -30,22 +29,34 @@ const Chart = ({ converted }) => {
             label={<StyledNode>INDO-ARYAN</StyledNode>}
         >
             <TreeNode>
-                <TreeNode label={<StyledNode>WESTERN INDIC</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Punjabi: {converted.punjabi}</StyledLeaf>} />
-                    <TreeNode label={<StyledLeaf>Gujarati: {converted.gujarati}</StyledLeaf>} />
+
+                <TreeNode label={<StyledNode>NEPALI</StyledNode>}>
+                    <TreeNode label={<StyledLeaf>{converted.nepali}</StyledLeaf>} />
                 </TreeNode>
-                <TreeNode label={<StyledNode>HINDUSTANI</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Hindi: {converted.hindi}</StyledLeaf>} />
-                    <TreeNode label={<StyledLeaf>Urdu: {converted.urdu}</StyledLeaf>} />
+
+                <TreeNode label={<StyledNode>HINDI</StyledNode>}>
+                    <TreeNode label={<StyledLeaf>{converted.hindi}</StyledLeaf>} />
                 </TreeNode>
-                <TreeNode label={<StyledNode>PAHARI</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Nepali: {converted.nepali}</StyledLeaf>} />
+
+
+                <TreeNode label={<StyledNode>URDU</StyledNode>}>
+                    <TreeNode label={<StyledLeaf>{converted.urdu}</StyledLeaf>} />
                 </TreeNode>
-                <TreeNode label={<StyledNode>MAGADHI</StyledNode>} >
-                    <TreeNode label={<StyledLeaf>Bengali: {converted.bengali}</StyledLeaf>} />
+
+                <TreeNode label={<StyledNode>BENGALI</StyledNode>} >
+                    <TreeNode label={<StyledLeaf>{converted.bengali}</StyledLeaf>} />
                 </TreeNode>
-                <TreeNode label={<StyledNode>MAHARASHTRI</StyledNode>}>
-                    <TreeNode label={<StyledLeaf>Marathi: {converted.marathi}</StyledLeaf>} />
+
+                <TreeNode label={<StyledNode>PUNJABI</StyledNode>}>
+                    <TreeNode label={<StyledLeaf>{converted.punjabi}</StyledLeaf>} />
+                </TreeNode>
+
+                <TreeNode label={<StyledNode>GUJARATI</StyledNode>}>
+                    <TreeNode label={<StyledLeaf>{converted.gujarati}</StyledLeaf>} />
+                </TreeNode>
+
+                <TreeNode label={<StyledNode>MARATHI</StyledNode>}>
+                    <TreeNode label={<StyledLeaf>{converted.marathi}</StyledLeaf>} />
                 </TreeNode>
             </TreeNode>
 
