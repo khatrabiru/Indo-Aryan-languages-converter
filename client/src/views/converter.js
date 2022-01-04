@@ -42,6 +42,7 @@ const Converter = () => {
                 } else {
                     setConverted({});
                 }
+                setFiltered([]);
             })
     };
 
@@ -51,11 +52,11 @@ const Converter = () => {
     }
 
     return (
-        <div class="inputField">
-            <Search value={inputText} placeholder="Place a English word" onChange={handleChangeInput} enterButton onSearch={submitHandler} required />
-            <ul class="list-group">
+        <div className="inputField">
+            <Search value={inputText} placeholder="Place a English word" onChange={handleChangeInput} enterButton="Search" onSearch={submitHandler} required />
+            <ul className="list-group">
                 {filtered.map(item => (
-                    <li class="list-group-item" onClick={onclickHandler} data-category={item} key={item}>{item}</li>
+                    <li className="list-group-item" onClick={onclickHandler} data-category={item} key={item}>{item}</li>
                 ))}
             </ul>
 
