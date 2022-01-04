@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Chart from "./chart";
 import axios from "axios";
 
-import { Input, Button } from 'antd';
-import InternalPreviewGroup from 'antd/lib/image/PreviewGroup';
+import { Input } from 'antd';
 
 const Converter = () => {
 
@@ -19,6 +18,11 @@ const Converter = () => {
     const handleChangeInput = (event) => {
         var inp = event.target.value;
         setInputText(inp);
+        if(inp === "") {
+            setFiltered([]);
+            setConverted({});
+            return;
+        }
 
         axios.get('http://localhost:3001/top/' + inp)
             .then(res => {
@@ -41,19 +45,17 @@ const Converter = () => {
             })
     };
 
-    const resetHandler = (e) => {
-        setInputText("")
-        setConverted({})
+    const onclickHandler = (event) => {
+        setInputText(event.target.innerText);
         setFiltered([]);
     }
 
     return (
         <div class="inputField">
             <Search value={inputText} placeholder="Place a English word" onChange={handleChangeInput} enterButton onSearch={submitHandler} required />
-            <Button onClick={resetHandler}>Reset</Button>
             <ul class="list-group">
                 {filtered.map(item => (
-                    <li class="list-group-item" onClick={() => setInputText(item)} data-category={item} key={item}>{item}</li>
+                    <li class="list-group-item" onClick={onclickHandler} data-category={item} key={item}>{item}</li>
                 ))}
             </ul>
 
