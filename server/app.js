@@ -1,9 +1,12 @@
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const Languages = require('./models/languages');
-
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/indo-aryan';
+// const dbUrl =  'mongodb://localhost:27017/indo-aryan';
+const dbUrl =  process.env.DB_URL;
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
