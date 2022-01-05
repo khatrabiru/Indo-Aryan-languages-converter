@@ -1,17 +1,19 @@
-if (process.env.NODE_ENV !== "production") {
-    require('dotenv').config();
-}
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const Languages = require('./models/languages');
 // const dbUrl =  'mongodb://localhost:27017/indo-aryan';
-const dbUrl =  process.env.DB_URL;
+const dbUrl =  String(process.env.DB_URL);
 
 mongoose.connect(dbUrl, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    },
+    () => {
+        console.log('Connected to MongoDB');
+    }
+);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -57,6 +59,7 @@ app.get('/search/:english', async (req, res,) => {
             res.send(result);
         }
     });
+    
 });
 
 app.get('/top/:english', async (req, res,) => {
@@ -64,6 +67,8 @@ app.get('/top/:english', async (req, res,) => {
     res.send( result );
 });
 
-app.listen(3001, () => {
-    console.log('Serving on port 3001')
+const port = process.env.PORT || 3001;
+
+app.listen(port, () => {
+    console.log(`Serving on port ${port}`)
 })

@@ -24,7 +24,7 @@ const Converter = () => {
             return;
         }
 
-        axios.get('http://localhost:3001/top/' + inp)
+        axios.get('https://whispering-chamber-31613.herokuapp.com/top/' + inp)
             .then(res => {
                 var arr = [];
                 for(let i = 0; i < res.data.length; i++) {
@@ -35,7 +35,7 @@ const Converter = () => {
     };
 
     const submitHandler = (e) => {
-        axios.get('http://localhost:3001/search/' + inputText)
+        axios.get('https://whispering-chamber-31613.herokuapp.com/search/' + inputText)
             .then(res => {
                 if(res.data) {
                     setConverted(res.data);
