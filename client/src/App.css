@@ -1,5 +1,4 @@
 
-
 body {
   background-color: #fff;
   color: #333;
@@ -38,4 +37,14 @@ body {
   min-width: 1.5em;
   padding: .25em;
   text-align: center
+}
+
+.main-footer {
+  color: white;
+  background-color: #212529;
+  padding-top: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
