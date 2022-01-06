@@ -51,7 +51,8 @@ app.get('/', (req, res) => {
 
 
 app.get('/search/:english', async (req, res,) => {
-    Languages.findOne({ english: req.params.english }, function (err, result) {
+    const word = String(req.params.english).toLowerCase();
+    Languages.findOne({ english: word }, function (err, result) {
         if (err) {
             console.log(err);
         }
@@ -63,7 +64,8 @@ app.get('/search/:english', async (req, res,) => {
 });
 
 app.get('/top/:english', async (req, res,) => {
-    const result = await Languages.find({ english: { $regex: req.params.english } }).limit(5);
+    const word = String(req.params.english).toLowerCase();
+    const result = await Languages.find({ english: { $regex: word } }).limit(5);
     res.send( result );
 });
 
