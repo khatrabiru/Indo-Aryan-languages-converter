@@ -1,11 +1,11 @@
 import './App.css';
 import Converter from "./views/converter";
-// import Navbar from "./views/navbar";
-
+import NavbarNew from "./views/navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
     <div className="App">
-      {/* <Navbar /> */}
+      <NavbarNew />
       <Converter />
     </div>
   );
