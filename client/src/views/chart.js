@@ -12,10 +12,11 @@ const StyledLeaf = styled.div`
   padding: 20px;
   border-radius: 15px;
   border: 2px solid #33ccff;
-  color: #00cc44;
+  color: black;
   &:hover {
     color: #006600;
   }
+  font-weight: bold;
 `;
 
 
