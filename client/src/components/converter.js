@@ -57,7 +57,7 @@ const Converter = () => {
                         <div className='col'>
                             <input
                                 type='text'
-                                name='inputText'
+                                value={inputText}
                                 className='form-control formInput'
                                 placeholder='Place a word that you want to seach'
                                 onChange={handleChangeInput}
