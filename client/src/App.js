@@ -1,15 +1,23 @@
 import './App.css';
-import Converter from "./views/converter";
-import NavbarNew from "./views/navbar";
-import Footer from "./views/footer";
+import Home from "./components/home";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarNew from "./components/navbar";
+import Footer from "./components/footer";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const App = () => {
   return (
-    <div className="App">
-      <NavbarNew />
-      <Converter />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <NavbarNew />
+        <div className='content'>
+          <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
+
   );
 }
 

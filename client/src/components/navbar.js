@@ -4,7 +4,7 @@ const NavbarNew = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">Home</Navbar.Brand>
+                <Navbar.Brand href="/">Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
@@ -23,7 +23,7 @@ const NavbarNew = () => {
                         <Nav.Link href="#pricing">About</Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">Contact</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
