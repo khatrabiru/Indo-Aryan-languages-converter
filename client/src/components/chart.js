@@ -6,16 +6,14 @@ const StyledNode = styled.div`
   padding: 15px;
   border-radius: 15px;
   display: inline-block;
-  border: 3px solid #ff9900;
+  border: 3px solid #004466;
+  color: #737373;
 `;
 const StyledLeaf = styled.div`
   padding: 20px;
   border-radius: 15px;
   border: 2px solid #33ccff;
-  color: black;
-  &:hover {
-    color: #006600;
-  }
+  color: white;
   font-weight: bold;
 `;
 

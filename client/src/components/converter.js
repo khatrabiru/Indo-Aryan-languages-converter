@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Chart from "./chart";
 import axios from "axios";
-import { Container, Form, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Converter = () => {
 
@@ -10,7 +10,7 @@ const Converter = () => {
     const [converted, setConverted] = useState({});
 
     useEffect(() => {
-    }, converted)
+    }, [converted])
 
     const handleChangeInput = (event) => {
         var inp = event.target.value;
@@ -52,23 +52,29 @@ const Converter = () => {
 
         <Container fluid>
             <Row>
-                <Col md={{ span: 4, offset: 4 }}>
-                    <Form >
-                        <Form.Group>
-                            <Row>
-                                <Col >
-                                    <Form.Control name="inputText" placeholder="Place a English word" onChange={handleChangeInput} />
-                                </Col>
-                                <Col >
-                                    <Button type="button" onClick={submitHandler}>Search</Button>
-                                </Col>
-                            </Row>
-                        </Form.Group>
-                    </Form>
+                <Col md={{ span: 4, offset: 3 }}>
+                    <div className='row formRow'>
+                        <div className='col'>
+                            <input
+                                type='text'
+                                name='inputText'
+                                className='form-control formInput'
+                                placeholder='Place a word that you want to seach'
+                                onChange={handleChangeInput}
+                            ></input>
+                        </div>
+                    </div>
                 </Col>
-            </Row>
+
+                <Col>
+                    <button className='search-btn' type='submit' onClick={submitHandler} >
+                        Search
+                    </button>
+                </Col>
+
+            </Row>      
             <Row>
-                <Col md={{ span: 3, offset: 4 }}>
+                <Col md={{ span: 3, offset: 3 }}>
                     <ul className="list-group">
                         {filtered.map(item => (
                             <li className="list-group-item" onClick={onclickHandler} data-category={item} key={item}>{item}</li>

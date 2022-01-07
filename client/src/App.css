@@ -1,6 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --light: #d0d1d3;
+  --dark: #040d14;
+  --green: #21ce99;
+}
+
 body {
-  background-color: #fff;
+  background-color: var(--dark);
   color: #333;
   font: 1.2em / 1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0;
@@ -11,7 +19,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--dark);
   border-radius: .5em;
   width: 20em;
 }
@@ -29,7 +37,7 @@ body {
 }
 
 .list-group .badge {
-  background-color: rebeccapurple;
+  background: var(--dark);
   color: #fff;
   font-weight: bold;
   font-size: 80%;
@@ -41,7 +49,7 @@ body {
 
 .main-footer {
   color: white;
-  background-color: #212529;
+  background: var(--dark);
   padding-top: 1em;
   position: absolute;
   bottom: 0;
@@ -61,4 +69,109 @@ body {
 
 .converter {
   margin: 10px;
+}
+
+
+/* body {
+  font-family: Poppins;
+  background: var(--dark);
+  background-color: black;
+  background: #f45532;
+  line-height: 26px;
+  margin: 0;
+} */
+
+h1 {
+  color: var(--green);
+}
+
+.App {
+  height: 75vh;
+}
+
+form {
+  margin-top: 20px;
+  background: var(--dark);
+}
+
+.formRow {
+  margin: 10px 0 20px 0;
+}
+
+.formInput {
+  padding: 25px 10px;
+  background-color: var(--dark);
+  box-shadow: 0 0 0 2px var(--green);
+  border: none;
+  color: var(--green);
+}
+
+.formInput:focus {
+  background-color: var(--dark);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--green);
+  color: var(--light);
+}
+
+.formInput::placeholder {
+  color: var(--green);
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+  color: var(--light);
+  opacity: 1;
+}
+
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--green);
+}
+
+.search-btn {
+  background-color: var(--dark);
+  color: var(--green) !important;
+  padding: 15px 50px;
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.submit-btn {
+  background-color: var(--dark);
+  color: var(--green) !important;
+  padding: 15px 50px;
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.submit-btn:hover {
+  background-color: var(--green);
+  color: var(--dark) !important;
+  border: 2px solid var(--green);
+}
+
+.submit-btn:disabled:hover {
+  background-color: var(--dark);
+  color: var(--green) !important;
+  cursor: wait;
+}
+
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
+  }
 }

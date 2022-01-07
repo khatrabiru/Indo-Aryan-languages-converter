@@ -1,7 +1,9 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from "./components/home";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarNew from "./components/navbar";
+import Contact from "./components/contact";
+
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const App = () => {
@@ -12,6 +14,7 @@ const App = () => {
         <div className='content'>
           <Routes>
           <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/contact" element={<Contact/>}/>
           </Routes>
         </div>
         <Footer />
