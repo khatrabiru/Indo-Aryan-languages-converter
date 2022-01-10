@@ -3,6 +3,8 @@ import './App.css';
 import Home from "./components/home";
 import NavbarNew from "./components/navbar";
 import Contact from "./components/contact";
+import IndoAryanLanguages from './components/languages/indo-aryan-languages';
+import Nepali from './components/languages/nepali';
 
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -15,6 +17,8 @@ const App = () => {
           <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
+          <Route exact path="/indo-aryan-languages" element={<IndoAryanLanguages/>}/>
+          <Route exact path="/nepali" element={<Nepali/>}/>
           </Routes>
         </div>
         <Footer />
