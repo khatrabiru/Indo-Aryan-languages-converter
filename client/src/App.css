@@ -51,8 +51,8 @@ body {
   color: white;
   background: var(--dark);
   padding-top: 1em;
-  position: absolute;
-  bottom: 0;
+  position:fixed;
+  bottom:0;
   width: 100%;
   text-align: center;
 }
