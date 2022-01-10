@@ -4,6 +4,7 @@ import Home from "./components/home";
 import NavbarNew from "./components/navbar";
 import Contact from "./components/contact";
 import Nepali from './components/languages/nepali';
+import Hindi from './components/languages/hindi';
 
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -17,6 +18,7 @@ const App = () => {
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
           <Route exact path="/nepali" element={<Nepali/>}/>
+          <Route exact path="/hindi" element={<Hindi/>}/>
           </Routes>
         </div>
         <Footer />
