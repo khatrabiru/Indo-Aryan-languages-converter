@@ -1,5 +1,5 @@
 import React from "react";
-const Bengali = () => {
+const Marathi = () => {
     return (
         <div>
             <div>
@@ -17,4 +17,4 @@ const Bengali = () => {
 
 };
 
-export default Bengali;
+export default Marathi;

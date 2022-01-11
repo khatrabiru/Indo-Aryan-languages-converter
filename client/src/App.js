@@ -5,6 +5,8 @@ import NavbarNew from "./components/navbar";
 import Contact from "./components/contact";
 import Nepali from './components/languages/nepali';
 import Hindi from './components/languages/hindi';
+import Urdu from './components/languages/urdu';
+import Bengali from './components/languages/bengali';
 
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -19,6 +21,8 @@ const App = () => {
           <Route exact path="/contact" element={<Contact/>}/>
           <Route exact path="/nepali" element={<Nepali/>}/>
           <Route exact path="/hindi" element={<Hindi/>}/>
+          <Route exact path="/urdu" element={<Urdu/>}/>
+          <Route exact path="/bengali" element={<bengali/>}/>
           </Routes>
         </div>
         <Footer />
