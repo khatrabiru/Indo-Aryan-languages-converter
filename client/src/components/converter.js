@@ -168,7 +168,7 @@ const Converter = () => {
                         </tr>
                         <tr>
                             <td>
-                                <div align="left"><a href="/oriya/" target="_top">Oriya</a></div>
+                                <div align="left"><a href="https://en.wikipedia.org/wiki/Odia_language" target="_top">Oriya</a></div>
                             </td>
                             <td>
                                 <div align="left">50 million</div>
@@ -179,7 +179,7 @@ const Converter = () => {
                         </tr>
                         <tr>
                             <td>
-                                <div align="left"><a href="/bhojpuri/" target="_top">Bhojpuri</a></div>
+                                <div align="left"><a href="https://en.wikipedia.org/wiki/Bhojpuri_language" target="_top">Bhojpuri</a></div>
                             </td>
                             <td>
                                 <div align="left">50 million</div>
@@ -201,7 +201,7 @@ const Converter = () => {
                         </tr>
                         <tr>
                             <td>
-                                <div align="left"><a href="/sindhi/" target="_top">Sindhi</a></div>
+                                <div align="left"><a href="https://en.wikipedia.org/wiki/Sindhi_language" target="_top">Sindhi</a></div>
                             </td>
                             <td>
                                 <div align="left">23 million</div>
