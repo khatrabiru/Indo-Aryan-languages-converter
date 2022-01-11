@@ -8,6 +8,8 @@ import Hindi from './components/languages/hindi';
 import Urdu from './components/languages/urdu';
 import Bengali from './components/languages/bengali';
 import Punjabi from './components/languages/punjabi';
+import Gujarati from './components/languages/gujarati';
+import Marathi from './components/languages/marathi';
 
 import Footer from "./components/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -25,6 +27,8 @@ const App = () => {
           <Route exact path="/urdu" element={<Urdu/>}/>
           <Route exact path="/bengali" element={<Bengali/>}/>
           <Route exact path="/punjabi" element={<Punjabi/>}/>
+          <Route exact path="/marathi" element={<Marathi/>}/>
+          <Route exact path="/gujarati" element={<Gujarati/>}/>
           </Routes>
         </div>
         <Footer />
