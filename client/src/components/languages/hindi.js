@@ -3,6 +3,7 @@ const Hindi = () => {
     return (
         <div>
             <div>
+                <h1>Hindi Language</h1>
                 <p>
                     Hindi language, member of the Indo-Aryan group within the Indo-Iranian branch of the
                     Indo-European language family. It is the preferred official language of India,
@@ -18,8 +19,8 @@ const Hindi = () => {
 
                 </p>
             </div>
-
             <div>
+                <h1>History</h1>
                 <p>
                     Literary Hindi, written in the Devanagari script, has been strongly influenced by
                     Sanskrit. Its standard form is based on the Khari Boli dialect, found to the north
@@ -40,6 +41,28 @@ const Hindi = () => {
                     spoken in Delhi, whose earliest form is known as Old Hindi, being enriched with
                     Persian loanwords.
                 </p>
+            </div>
+
+            <div>
+                <h1>Alphabet</h1>
+                <div>
+                    <h3>Vowels</h3>
+                    <p>
+                        <h4>अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Consonats</h3>
+                    <p>
+                    <h4>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Numerals</h3>
+                    <p>
+                        <h4>०, १, २, ३, ४, ५, ६, ७, ८, ९</h4>
+                    </p>
+                </div>
             </div>
 
         </div>
