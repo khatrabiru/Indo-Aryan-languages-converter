@@ -3,6 +3,7 @@ const Marathi = () => {
     return (
         <div>
             <div>
+            <h1>Marathi Language</h1>
                 <p>
                     Marathi language, Indo-Aryan language of western and central India. Its range extends from
                     north of Mumbai down the western coast past Goa and eastward across the Deccan; in 1966
@@ -20,6 +21,7 @@ const Marathi = () => {
                 </p>
             </div>
             <div>
+            <h1>History</h1>
                 <p>
                     Marathi is derived from Sanskrit through a Prakrit dialect called Maharashtri in the 1st-2nd
                     centuries AD. It was the most widespread Prakrit dialect of its time. Maharashtri gradually
@@ -47,6 +49,28 @@ const Marathi = () => {
                     by the 12th century. However, there is no record of any literature produced in Marathi
                     until the late 13th century.
                 </p>
+            </div>
+
+            <div>
+                <h1>Alphabet</h1>
+                <div>
+                    <h3>Vowels</h3>
+                    <p>
+                        <h4>অ, আ, ই, ঈ,	উ, ঊ, ঋ, এ,	ঐ, ও, ঔ</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Consonats</h3>
+                    <p>
+                        <h4>ক, খ, গ, ঘ, ঙ, চ, ছ, জ,	ঝ, ঞ, ট, ঠ,	ড, ঢ, ণ, ট,	ঠ, ড, ঢ, ণ,	প, ফ, ব, ভ,	ম, য, র, র,	শ, ষ, ষ, হ,	ড়,	ঢ়,	য়</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Numerals</h3>
+                    <p>
+                        <h4>০, ১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯</h4>
+                    </p>
+                </div>
             </div>
         </div>
     );

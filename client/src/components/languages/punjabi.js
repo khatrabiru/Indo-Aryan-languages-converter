@@ -3,6 +3,7 @@ const Punjabi = () => {
     return (
         <div>
             <div>
+            <h1>Punjabi Language</h1>
                 <p>
                     Punjabi language, Punjabi also spelled Panjabi, one of the most widely spoken Indo-Aryan
                     languages. The old British spelling “Punjabi” remains in more common general usage than
@@ -26,6 +27,7 @@ const Punjabi = () => {
                 </p>
             </div>
             <div>
+            <h1>History</h1>
                 <p>
                     The word Punjabi has been derived from the Persian words ‘Punj’ and ‘ab’, where ‘Punj’ means five
                     and ‘ab’ means water. Therefore, the name Punjab means “the land of five rivers” and refers to the
@@ -40,6 +42,28 @@ const Punjabi = () => {
                     Granth Sahib in the language’s Gurmukhi script. With the Muslim conquests of the Indian Subcontinent,
                     many Arabic and Persian words became incorporated into the Punjabi language.
                 </p>
+            </div>
+
+            <div>
+                <h1>Alphabet</h1>
+                <div>
+                    <h3>Vowels</h3>
+                    <p>
+                        <h4>ਅ, ਆ, ਇ, ਈ, ਉ, ਊ, ਏ, ਐ, ਓ, ਔ</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Consonats</h3>
+                    <p>
+                        <h4>ੳ, ਅ, ੲ, ਸ, ਹ, ਕ, ਖ, ਗ,	ਘ, ਙ, ਚ, ਛ,	ਜ, ਝ, ਞ, ਟ,	ਠ, ਡ, ਢ, ਣ,	ਤ, ਥ, ਦ, ਧ,	ਨ, ਪ, ਫ, ਬ, ਭ, ਮ, ਯ, ਰ,	ਲ, ਵ, ੜ, ਸ਼, ਖ਼, ਗ਼, ਜ਼, ਫ਼, ਲ਼ </h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Numerals</h3>
+                    <p>
+                        <h4>੦, ੧, ੨, ੩,	੪, ੫, ੬, ੭,	੮, ੯, ੧੦</h4>
+                    </p>
+                </div>
             </div>
         </div>
     );
