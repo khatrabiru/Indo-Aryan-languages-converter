@@ -18,6 +18,7 @@ const Hindi = () => {
                     the most spoken languages of the world.
 
                 </p>
+
             </div>
             <div>
                 <h1>History</h1>
@@ -50,18 +51,35 @@ const Hindi = () => {
                     <p>
                         <h4>अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ</h4>
                     </p>
+                    <div>
+                        <img
+                            src={require('./images/hindi_vowels.jpeg')}
+                        />
+                    </div>
                 </div>
                 <div>
                     <h3>Consonats</h3>
                     <p>
-                    <h4>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ</h4>
+                        <h4>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ</h4>
                     </p>
+
+                    <div>
+                        <img
+                            src={require('./images/hindi_consonants.jpeg')}
+                        />
+                    </div>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
                         <h4>०, १, २, ३, ४, ५, ६, ७, ८, ९</h4>
                     </p>
+
+                    <div>
+                        <img
+                            src={require('./images/hindi_numbers.jpeg')}
+                        />
+                    </div>
                 </div>
             </div>
 
