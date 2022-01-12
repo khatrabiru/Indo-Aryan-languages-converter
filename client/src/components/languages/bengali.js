@@ -3,6 +3,7 @@ const Bengali = () => {
     return (
         <div>
             <div>
+                <h1>Bengali Language</h1>
                 <p>
                     Bengali language, Bengali Bangla, member of the Indo-Aryan group of the Indo-Iranian branch
                     of the Indo-European language family. It is spoken by more than 210 million people as a firsts
@@ -18,6 +19,7 @@ const Bengali = () => {
                 </p>
             </div>
             <div>
+                <h1>History</h1>
                 <p>
                     Like other Eastern Indo-Aryan languages, Bengali arose from the eastern Middle Indic
                     languages of the Indian subcontinent. Magadhi Prakrit, the earliest recorded spoken
@@ -37,6 +39,28 @@ const Bengali = () => {
                     specimens of Bengali language and literature, the Charyapadas (Buddhist mystic songs), are
                     also claimed by speakers of Oriya and Assamese as their own.
                 </p>
+            </div>
+
+            <div>
+                <h1>Alphabet</h1>
+                <div>
+                    <h3>Vowels</h3>
+                    <p>
+                        <h4>অ, আ, ই, ঈ,	উ, ঊ, ঋ, এ,	ঐ, ও, ঔ</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Consonats</h3>
+                    <p>
+                        <h4>ক, খ, গ, ঘ, ঙ, চ, ছ, জ,	ঝ, ঞ, ট, ঠ,	ড, ঢ, ণ, ট,	ঠ, ড, ঢ, ণ,	প, ফ, ব, ভ,	ম, য, র, র,	শ, ষ, ষ, হ,	ড়,	ঢ়,	য়</h4>
+                    </p>
+                </div>
+                <div>
+                    <h3>Numerals</h3>
+                    <p>
+                        <h4>০, ১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯</h4>
+                    </p>
+                </div>
             </div>
         </div>
     );
