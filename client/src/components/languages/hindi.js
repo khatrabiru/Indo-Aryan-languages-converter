@@ -53,7 +53,7 @@ const Hindi = () => {
                     </p>
                     <div>
                         <img
-                            src={require('./images/hindi_vowels.jpeg')}
+                            src={require('./images/hindi_vowels.png')}
                         />
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const Hindi = () => {
 
                     <div>
                         <img
-                            src={require('./images/hindi_numbers.jpeg')}
+                            src={require('./images/hindi_numbers.png')}
                         />
                     </div>
                 </div>
