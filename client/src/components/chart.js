@@ -12,8 +12,8 @@ const StyledNode = styled.div`
 const StyledLeaf = styled.div`
   padding: 20px;
   border-radius: 15px;
-  border: 2px solid #33ccff;
-  color: white;
+  border: 2px solid #004466;
+  color: #737373;
   font-weight: bold;
 `;
 
