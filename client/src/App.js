@@ -3,6 +3,7 @@ import './App.css';
 import Home from "./components/home";
 import NavbarNew from "./components/navbar";
 import Contact from "./components/contact";
+import About from "./components/about";
 import Nepali from './components/languages/nepali';
 import Hindi from './components/languages/hindi';
 import Urdu from './components/languages/urdu';
@@ -22,6 +23,7 @@ const App = () => {
           <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
+          <Route exact path="/about" element={<About/>}/>
           <Route exact path="/nepali" element={<Nepali/>}/>
           <Route exact path="/hindi" element={<Hindi/>}/>
           <Route exact path="/urdu" element={<Urdu/>}/>
