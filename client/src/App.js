@@ -31,7 +31,7 @@ const App = () => {
           <Route exact path="/gujarati" element={<Gujarati/>}/>
           </Routes>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
 
