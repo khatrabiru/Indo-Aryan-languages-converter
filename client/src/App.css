@@ -57,6 +57,10 @@ body {
   text-align: center;
 }
 
+.main-footer p {
+  background-color: #040d14;
+}
+
 h1 {
   color: var(--green);
 }
@@ -161,6 +165,25 @@ form {
   margin-bottom: 10px;
 }
 
+.container4 {
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container4 p {
+  background-color: #040d14;
+}
+
+div p {
+  background-color: #040d14;
+}
+div h2 {
+  background-color: #040d14;
+}
+div h3 {
+  background-color: #040d14;
+}
 .header1 {
   color: #737373
 }
