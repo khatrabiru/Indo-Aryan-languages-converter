@@ -1,9 +1,10 @@
 import React from "react";
+import './language.css';
 const Hindi = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <div>
-                <h1>Hindi Language</h1>
+                <h2>Hindi Language</h2>
                 <p>
                     Hindi language, member of the Indo-Aryan group within the Indo-Iranian branch of the
                     Indo-European language family. It is the preferred official language of India,
@@ -21,7 +22,7 @@ const Hindi = () => {
 
             </div>
             <div>
-                <h1>History</h1>
+                <h2>History</h2>
                 <p>
                     Literary Hindi, written in the Devanagari script, has been strongly influenced by
                     Sanskrit. Its standard form is based on the Khari Boli dialect, found to the north
@@ -45,41 +46,24 @@ const Hindi = () => {
             </div>
 
             <div>
-                <h1>Alphabet</h1>
+                <h2>Alphabet</h2>
                 <div>
                     <h3>Vowels</h3>
                     <p>
                         <h4>अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ</h4>
                     </p>
-                    <div>
-                        <img
-                            src={require('./images/hindi_vowels.png')}
-                        />
-                    </div>
                 </div>
                 <div>
                     <h3>Consonats</h3>
                     <p>
                         <h4>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ</h4>
                     </p>
-
-                    <div>
-                        <img
-                            src={require('./images/hindi_consonants.jpeg')}
-                        />
-                    </div>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
                         <h4>०, १, २, ३, ४, ५, ६, ७, ८, ९</h4>
                     </p>
-
-                    <div>
-                        <img
-                            src={require('./images/hindi_numbers.png')}
-                        />
-                    </div>
                 </div>
             </div>
 

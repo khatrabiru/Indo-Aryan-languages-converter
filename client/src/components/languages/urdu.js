@@ -1,9 +1,10 @@
 import React from "react";
+import './language.css';
 const Urdu = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <div>
-            <h1>Urdu Language</h1>
+                <h2>Urdu Language</h2>
                 <p>
                     Urdu language, member of the Indo-Aryan group within the Indo-European family of
                     languages. Urdu is spoken as a first language by nearly 70 million people and as
@@ -27,7 +28,7 @@ const Urdu = () => {
             </div>
 
             <div>
-            <h1>History</h1>
+                <h2>History</h2>
                 <p>
                     Urdu developed in the 12th century CE from the regional Apabhramsha of northwestern
                     India, serving as a linguistic modus vivendi after the Muslim conquest. Its first
@@ -48,17 +49,17 @@ const Urdu = () => {
             </div>
 
             <div>
-                <h1>Alphabet</h1>
+                <h2>Alphabet</h2>
                 <div>
                     <h3>Letters</h3>
                     <p>
-                        <h4> ے ,ی ,ہ ,و ,ن ,م ,ل ,گ ,ک ,ق ,ف ,غ ,ع ,ظ ,ط ,ض ,ص ,ش ,س ,ژ ,ز ,ڑ ,ر ,ذ ,ڈ ,د ,خ ,ح ,چ ,ج ,ث ,ٹ ,ت ,پ ,ب ,ا ,آ</h4>
+                        ے ,ی ,ہ ,و ,ن ,م ,ل ,گ ,ک ,ق ,ف ,غ ,ع ,ظ ,ط ,ض ,ص ,ش ,س ,ژ ,ز ,ڑ ,ر ,ذ ,ڈ ,د ,خ ,ح ,چ ,ج ,ث ,ٹ ,ت ,پ ,ب ,ا ,آ
                     </p>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
-                        <h4>۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹</h4>
+                        ۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹
                     </p>
                 </div>
             </div>

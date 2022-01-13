@@ -1,9 +1,10 @@
 import React from "react";
+import './language.css';
 const Gujarati = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <div>
-            <h1>Gujarati Language</h1>
+            <h2>Gujarati Language</h2>
                 <p>
                     Gujarati language, Indo-Aryan member of the Indo-Iranian group of Indo-European languages.
                     Gujarati is officially recognized in the Indian constitution and is spoken by more than 46
@@ -23,7 +24,7 @@ const Gujarati = () => {
                 </p>
             </div>
             <div>
-            <h1>History</h1>
+            <h2>History</h2>
                 <p>
                     The first grammar of a precursor of Gujarati was written in the 12th century. The first
                     literary records of Gujarati were mostly religious verses dating back to the 17th century.
@@ -54,23 +55,23 @@ const Gujarati = () => {
             </div>
 
             <div>
-                <h1>Alphabet</h1>
+                <h2>Alphabet</h2>
                 <div>
                     <h3>Vowels</h3>
                     <p>
-                        <h4>અ, આ, ઇ, ઈ, ઉ, ઊ, એ, ઐ, ઓ, ઔ, અં, અઃ </h4>
+                        અ, આ, ઇ, ઈ, ઉ, ઊ, એ, ઐ, ઓ, ઔ, અં, અઃ
                     </p>
                 </div>
                 <div>
                     <h3>Consonats</h3>
                     <p>
-                        <h4> ક, ખ, ગ,ઘ, ચ, છ, જ, ઝ, ટ, ઠ, ડ, ઢ, ણ, ત, થ, દ, ધ, ન, પ, ફ, બ, ભ, મ, ય, ર, લ, વ, શ, સ, ષ, હ, ળ, ક્ષ, જ્ઞ </h4>
+                        ક, ખ, ગ,ઘ, ચ, છ, જ, ઝ, ટ, ઠ, ડ, ઢ, ણ, ત, થ, દ, ધ, ન, પ, ફ, બ, ભ, મ, ય, ર, લ, વ, શ, સ, ષ, હ, ળ, ક્ષ, જ્ઞ
                     </p>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
-                        <h4>૦, ૧, ૨, ૩, ૪, ૫, ૬, ૭, ૮, ૯</h4>
+                        ૦, ૧, ૨, ૩, ૪, ૫, ૬, ૭, ૮, ૯
                     </p>
                 </div>
             </div>

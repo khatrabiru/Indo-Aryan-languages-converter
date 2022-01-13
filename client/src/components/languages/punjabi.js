@@ -1,9 +1,10 @@
 import React from "react";
+import './language.css';
 const Punjabi = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <div>
-            <h1>Punjabi Language</h1>
+                <h2>Punjabi Language</h2>
                 <p>
                     Punjabi language, Punjabi also spelled Panjabi, one of the most widely spoken Indo-Aryan
                     languages. The old British spelling “Punjabi” remains in more common general usage than
@@ -27,7 +28,7 @@ const Punjabi = () => {
                 </p>
             </div>
             <div>
-            <h1>History</h1>
+                <h2>History</h2>
                 <p>
                     The word Punjabi has been derived from the Persian words ‘Punj’ and ‘ab’, where ‘Punj’ means five
                     and ‘ab’ means water. Therefore, the name Punjab means “the land of five rivers” and refers to the
@@ -45,23 +46,23 @@ const Punjabi = () => {
             </div>
 
             <div>
-                <h1>Alphabet</h1>
+                <h2>Alphabet</h2>
                 <div>
                     <h3>Vowels</h3>
                     <p>
-                        <h4>ਅ, ਆ, ਇ, ਈ, ਉ, ਊ, ਏ, ਐ, ਓ, ਔ</h4>
+                        ਅ, ਆ, ਇ, ਈ, ਉ, ਊ, ਏ, ਐ, ਓ, ਔ
                     </p>
                 </div>
                 <div>
                     <h3>Consonats</h3>
                     <p>
-                        <h4>ੳ, ਅ, ੲ, ਸ, ਹ, ਕ, ਖ, ਗ,	ਘ, ਙ, ਚ, ਛ,	ਜ, ਝ, ਞ, ਟ,	ਠ, ਡ, ਢ, ਣ,	ਤ, ਥ, ਦ, ਧ,	ਨ, ਪ, ਫ, ਬ, ਭ, ਮ, ਯ, ਰ,	ਲ, ਵ, ੜ, ਸ਼, ਖ਼, ਗ਼, ਜ਼, ਫ਼, ਲ਼ </h4>
+                        ੳ, ਅ, ੲ, ਸ, ਹ, ਕ, ਖ, ਗ,	ਘ, ਙ, ਚ, ਛ,	ਜ, ਝ, ਞ, ਟ,	ਠ, ਡ, ਢ, ਣ,	ਤ, ਥ, ਦ, ਧ,	ਨ, ਪ, ਫ, ਬ, ਭ, ਮ, ਯ, ਰ,	ਲ, ਵ, ੜ, ਸ਼, ਖ਼, ਗ਼, ਜ਼, ਫ਼, ਲ਼
                     </p>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
-                        <h4>੦, ੧, ੨, ੩,	੪, ੫, ੬, ੭,	੮, ੯, ੧੦</h4>
+                        ੦, ੧, ੨, ੩,	੪, ੫, ੬, ੭,	੮, ੯, ੧੦
                     </p>
                 </div>
             </div>

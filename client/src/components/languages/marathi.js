@@ -1,9 +1,10 @@
 import React from "react";
+import './language.css';
 const Marathi = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <div>
-            <h1>Marathi Language</h1>
+                <h2>Marathi Language</h2>
                 <p>
                     Marathi language, Indo-Aryan language of western and central India. Its range extends from
                     north of Mumbai down the western coast past Goa and eastward across the Deccan; in 1966
@@ -21,7 +22,7 @@ const Marathi = () => {
                 </p>
             </div>
             <div>
-            <h1>History</h1>
+                <h2>History</h2>
                 <p>
                     Marathi is derived from Sanskrit through a Prakrit dialect called Maharashtri in the 1st-2nd
                     centuries AD. It was the most widespread Prakrit dialect of its time. Maharashtri gradually
@@ -52,23 +53,23 @@ const Marathi = () => {
             </div>
 
             <div>
-                <h1>Alphabet</h1>
+                <h2>Alphabet</h2>
                 <div>
                     <h3>Vowels</h3>
                     <p>
-                        <h4>अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ</h4>
+                        अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ
                     </p>
                 </div>
                 <div>
                     <h3>Consonats</h3>
                     <p>
-                    <h4>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ</h4>
+                        क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ
                     </p>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
-                        <h4>०, १, २, ३, ४, ५, ६, ७, ८, ९</h4>
+                        ०, १, २, ३, ४, ५, ६, ७, ८, ९
                     </p>
                 </div>
             </div>

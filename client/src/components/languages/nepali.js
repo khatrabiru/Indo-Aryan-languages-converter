@@ -1,9 +1,10 @@
 import React from "react";
+import './language.css';
 const Nepali = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <div>
-            <h1>Nepali Language</h1>
+            <h2>Nepali Language</h2>
                 <p>
                     Nepali language, also called Gurkha, Gorkhali, Gurkhali,
                     or Khaskura, member of the Pahari subgroup of the Indo-Aryan
@@ -18,7 +19,7 @@ const Nepali = () => {
                 </p>
             </div>
             <div>
-            <h1>History</h1>
+            <h2>History</h2>
                 <p>
                     Nepali is said to have originated from a now extinct language called
                     'Khas Kura' or the Khas talk. The Khas people were ancient war tribes
@@ -45,23 +46,23 @@ const Nepali = () => {
             </div>
 
             <div>
-                <h1>Alphabet</h1>
+                <h2>Alphabet</h2>
                 <div>
                     <h3>Vowels</h3>
                     <p>
-                        <h4>अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ</h4>
+                        अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ
                     </p>
                 </div>
                 <div>
                     <h3>Consonats</h3>
                     <p>
-                    <h4>क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ</h4>
+                    क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ
                     </p>
                 </div>
                 <div>
                     <h3>Numerals</h3>
                     <p>
-                        <h4>०, १, २, ३, ४, ५, ६, ७, ८, ९</h4>
+                        ०, १, २, ३, ४, ५, ६, ७, ८, ९
                     </p>
                 </div>
             </div>
