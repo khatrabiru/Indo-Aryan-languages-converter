@@ -1,6 +1,6 @@
 import React from "react";
 import './language.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row} from 'react-bootstrap';
 const IndoAryanLanguages = () => {
     return (
         <div className="container-fluid">
@@ -18,71 +18,71 @@ const IndoAryanLanguages = () => {
                     <tbody>
                         <tr>
                             <th width="25%">
-                                <div align="left">Language</div>
+                                <div className="header1">Language</div>
                             </th>
                             <th width="44%">
-                                <div align="left">Number of speakers</div>
+                                <div className="header1">Number of speakers</div>
                             </th>
                             <th width="31%">
-                                <div align="left">Where spoken primarily</div>
+                                <div className="header1">Where spoken</div>
                             </th>
                         </tr>
-                        <tr>
+                        <tr className="header1">
                             <td height="32">
-                                <div align="left"><a href="/hindi/" target="_top">Hindi</a></div>
+                                <div ><a href="/hindi/">Hindi</a></div>
                             </td>
                             <td>
-                                <div align="left">425 million</div>
+                                <div >425 million</div>
                             </td>
                             <td>
-                                <div align="left">India, Pakistan</div>
+                                <div >India, Pakistan</div>
                             </td>
                         </tr>
-                        <tr>
+                        <tr className="header1">
                             <td>
-                                <div align="left"><a href="/bengali/" target="_top">Bengali</a></div>
+                                <div ><a href="/bengali/" >Bengali</a></div>
                             </td>
                             <td>
-                                <div align="left">210 million </div>
+                                <div >210 million </div>
                             </td>
                             <td>
-                                <div align="left">Bangladesh, India</div>
+                                <div >Bangladesh, India</div>
                             </td>
                         </tr>
-                        <tr>
-                            <td><a href="/urdu/" target="_top">Urdu</a></td>
-                            <td>70 million </td>
-                            <td>Pakistan, India</td>
+                        <tr className="header1">
+                            <td>
+                                <div ><a href="/punjabi/" >Punjabi</a></div>
+                            </td>
+                            <td>
+                                <div >122 million</div>
+                            </td>
+                            <td>
+                                <div >India, Pakistan</div>
+                            </td>
                         </tr>
-                        <tr>
-                            <td><a href="/marathi/" target="_top">Marathi</a></td>
+                        <tr className="header1">
+                            <td><a href="/marathi/" >Marathi</a></td>
                             <td>83 million</td>
                             <td>India</td>
                         </tr>
-                        <tr>
+                        <tr className="header1">
+                            <td><a href="/urdu/" >Urdu</a></td>
+                            <td>70 million </td>
+                            <td>Pakistan, India</td>
+                        </tr>
+                        <tr className="header1">
                             <td>
-                                <div align="left"><a href="/punjabi/" target="_top">Punjabi</a></div>
+                                <div ><a href="/gujarati/" >Gujarati</a></div>
                             </td>
                             <td>
-                                <div align="left">122 million</div>
+                                <div >46 million</div>
                             </td>
                             <td>
-                                <div align="left">India, Pakistan</div>
+                                <div >India</div>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <div align="left"><a href="/gujarati/" target="_top">Gujarati</a></div>
-                            </td>
-                            <td>
-                                <div align="left">46 million</div>
-                            </td>
-                            <td>
-                                <div align="left">India</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="/nepali/" target="_top">Nepali</a></td>
+                        <tr className="header1">
+                            <td><a href="/nepali/" >Nepali</a></td>
                             <td>17 million</td>
                             <td>Nepal, India</td>
                         </tr>

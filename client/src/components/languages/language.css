@@ -11,3 +11,22 @@ h4 {
     background-color: black;
     color: #737373
 }
+
+a:link {
+    color: #737373;
+    background-color: transparent;
+  }
+  a:visited {
+    color: #737373;
+    background-color: transparent;
+  }
+  a:hover {
+    color: #4d0099;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
