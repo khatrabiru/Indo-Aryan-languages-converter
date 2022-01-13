@@ -3,7 +3,7 @@ import './language.css';
 const Hindi = () => {
     return (
         <div className="container-fluid">
-            <div>
+            <div className="container2">
                 <h2>Hindi Language</h2>
                 <p>
                     Hindi language, member of the Indo-Aryan group within the Indo-Iranian branch of the

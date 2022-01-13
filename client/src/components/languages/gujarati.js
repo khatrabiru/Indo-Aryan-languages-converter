@@ -3,8 +3,8 @@ import './language.css';
 const Gujarati = () => {
     return (
         <div className="container-fluid">
-            <div>
-            <h2>Gujarati Language</h2>
+            <div className="container2">
+                <h2>Gujarati Language</h2>
                 <p>
                     Gujarati language, Indo-Aryan member of the Indo-Iranian group of Indo-European languages.
                     Gujarati is officially recognized in the Indian constitution and is spoken by more than 46
@@ -24,7 +24,7 @@ const Gujarati = () => {
                 </p>
             </div>
             <div>
-            <h2>History</h2>
+                <h2>History</h2>
                 <p>
                     The first grammar of a precursor of Gujarati was written in the 12th century. The first
                     literary records of Gujarati were mostly religious verses dating back to the 17th century.

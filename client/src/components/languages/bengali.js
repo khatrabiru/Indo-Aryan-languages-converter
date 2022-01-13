@@ -3,7 +3,7 @@ import './language.css';
 const Bengali = () => {
     return (
         <div className="container-fluid">
-            <div>
+            <div className="container2">
                 <h2>Bengali Language</h2>
                 <p>
                     Bengali language, Bengali Bangla, member of the Indo-Aryan group of the Indo-Iranian branch

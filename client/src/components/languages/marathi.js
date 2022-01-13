@@ -3,7 +3,7 @@ import './language.css';
 const Marathi = () => {
     return (
         <div className="container-fluid">
-            <div>
+            <div className="container2">
                 <h2>Marathi Language</h2>
                 <p>
                     Marathi language, Indo-Aryan language of western and central India. Its range extends from

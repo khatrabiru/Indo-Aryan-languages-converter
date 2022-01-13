@@ -3,8 +3,8 @@ import './language.css';
 const Nepali = () => {
     return (
         <div className="container-fluid">
-            <div>
-            <h2>Nepali Language</h2>
+            <div className="container2">
+                <h2>Nepali Language</h2>
                 <p>
                     Nepali language, also called Gurkha, Gorkhali, Gurkhali,
                     or Khaskura, member of the Pahari subgroup of the Indo-Aryan
@@ -19,7 +19,7 @@ const Nepali = () => {
                 </p>
             </div>
             <div>
-            <h2>History</h2>
+                <h2>History</h2>
                 <p>
                     Nepali is said to have originated from a now extinct language called
                     'Khas Kura' or the Khas talk. The Khas people were ancient war tribes
@@ -56,7 +56,7 @@ const Nepali = () => {
                 <div>
                     <h3>Consonats</h3>
                     <p>
-                    क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ
+                        क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ
                     </p>
                 </div>
                 <div>

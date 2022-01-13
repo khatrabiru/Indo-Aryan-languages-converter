@@ -3,7 +3,7 @@ import './language.css';
 const Urdu = () => {
     return (
         <div className="container-fluid">
-            <div>
+            <div className="container2">
                 <h2>Urdu Language</h2>
                 <p>
                     Urdu language, member of the Indo-Aryan group within the Indo-European family of

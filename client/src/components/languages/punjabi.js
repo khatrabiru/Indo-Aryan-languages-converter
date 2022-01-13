@@ -3,7 +3,7 @@ import './language.css';
 const Punjabi = () => {
     return (
         <div className="container-fluid">
-            <div>
+            <div className="container2">
                 <h2>Punjabi Language</h2>
                 <p>
                     Punjabi language, Punjabi also spelled Panjabi, one of the most widely spoken Indo-Aryan
