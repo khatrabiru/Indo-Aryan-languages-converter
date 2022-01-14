@@ -5,12 +5,13 @@ The languages spoken in Nepal, Bangladesh, India, Pakistan and Srilanka have so 
 
 ## Indo Aryan Languages
 Indo-Aryan languages, also called Indic languages, subgroup of the Indo-Iranian branch of the Indo-European language family. In the early 21st century, Indo-Aryan languages were spoken by more than 800 million people, primarily in India, Bangladesh, Nepal, Pakistan, Sri Lanka and the Maldives. There are 219 Indo-Aryan languages, some of which are yet to be definitively classified.
-
+![Most used Indo Aryan languages](https://ibb.co/7G8YvNM)
 
 ## Indo Aryan Language converter
 You can convert words from any language to any other languages within following languages.
 ###### **English, Hindi, Urdu, Nepali, Bengali, Marathi, Gujarati**
 You can able to see the beautiful chart to find out the meaning in all Indo Aryan Languages.
+
 
 ## Want to help me?
 So far, I have managed to put 20 thousands of popular words in 8 different languages. If you want to contribute in translation of those words or if you think some translations are not perfect, please contact me on linkedin ( https://www.linkedin.com/in/khatribiru/ ).
