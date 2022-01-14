@@ -52,6 +52,7 @@ body {
   background: var(--dark);
   padding-top: 1em;
   position:fixed;
+  margin-top: 1000px;
   bottom:0;
   width: 100%;
   text-align: center;
