@@ -6,12 +6,13 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const Languages = require('./models/languages');
-const dbUrl =  String(process.env.DB_URL) || 'mongodb://localhost:27017/indo-aryan';
+const dbUrl = String(process.env.DB_URL);
+// const dbUrl = 'mongodb://localhost:27017/indo-aryan';
 
 mongoose.connect(dbUrl, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    },
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+},
     () => {
         console.log('Connected to MongoDB');
     }
@@ -52,9 +53,20 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/search/:english', async (req, res,) => {
-    const word = String(req.params.english).toLowerCase();
-    Languages.findOne({ english: word }, function (err, result) {
+app.get('/search/:word', async (req, res,) => {
+    const word = String(req.params.word).toLowerCase();
+    Languages.findOne({
+        $or: [
+            { english: { $regex: word } },
+            { hindi: { $regex: word } },
+            { urdu: { $regex: word } },
+            { bengali: { $regex: word } },
+            { punjabi: { $regex: word } },
+            { marathi: { $regex: word } },
+            { gujarati: { $regex: word } },
+            { nepali: { $regex: word } }
+        ]
+    }, function (err, result) {
         if (err) {
             console.log(err);
         }
@@ -62,13 +74,24 @@ app.get('/search/:english', async (req, res,) => {
             res.send(result);
         }
     });
-    
+
 });
 
 app.get('/top/:english', async (req, res,) => {
     const word = String(req.params.english).toLowerCase();
-    const result = await Languages.find({ english: { $regex: word } }).limit(5);
-    res.send( result );
+    const result = await Languages.find({
+        $or: [
+            { english: { $regex: word } },
+            { hindi: { $regex: word } },
+            { urdu: { $regex: word } },
+            { bengali: { $regex: word } },
+            { punjabi: { $regex: word } },
+            { marathi: { $regex: word } },
+            { gujarati: { $regex: word } },
+            { nepali: { $regex: word } }
+        ]
+    }).limit(5);
+    res.send(result);
 });
 
 const port = process.env.PORT || 3001;

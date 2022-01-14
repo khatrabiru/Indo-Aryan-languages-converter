@@ -15,24 +15,54 @@ const Converter = () => {
     const handleChangeInput = (event) => {
         var inp = event.target.value;
         setInputText(inp);
+        setFiltered([]);
+        setConverted({});
         if (inp === "") {
-            setFiltered([]);
-            setConverted({});
             return;
         }
 
-        axios.get('https://whispering-chamber-31613.herokuapp.com/top/' + inp)
+        const url = 'https://whispering-chamber-31613.herokuapp.com/top/';
+        // const url = 'http://localhost:3001/top/';
+
+        axios.get(url + inp)
             .then(res => {
                 var arr = [];
+                console.log(res.data);
+                const regex = new RegExp(inp);
                 for (let i = 0; i < res.data.length; i++) {
-                    arr.push(String(res.data[i].english));
+                    console.log(regex.test(String(res.data[i].english)));
+                    if (regex.test(String(res.data[i].english))) {
+                        arr.push(String(res.data[i].english));
+                    } else if (regex.test(String(res.data[i].hindi))) {
+                        arr.push(String(res.data[i].hindi));
+                    } else if (regex.test(String(res.data[i].urdu))) {
+                        arr.push(String(res.data[i].urdu));
+                    } else if (regex.test(String(res.data[i].bengali))) {
+                        arr.push(String(res.data[i].bengali));
+                    } else if (regex.test(String(res.data[i].punjabi))) {
+                        arr.push(String(res.data[i].punjabi));
+                    } else if (regex.test(String(res.data[i].gujarati))) {
+                        arr.push(String(res.data[i].gujarati));
+                    } else if (regex.test(String(res.data[i].marathi))) {
+                        arr.push(String(res.data[i].marathi));
+                    } else if (regex.test(String(res.data[i].nepali))) {
+                        arr.push(String(res.data[i].nepali));
+                    }
                 }
                 setFiltered(arr);
             })
     };
 
+    function unique(a) {
+        return a.sort().filter(function (value, index, array) {
+            return (index === 0) || (value !== array[index - 1]);
+        });
+    }
+
     const submitHandler = (e) => {
-        axios.get('https://whispering-chamber-31613.herokuapp.com/search/' + inputText)
+        const url = 'https://whispering-chamber-31613.herokuapp.com/search/';
+        // const url = 'http://localhost:3001/search/';
+        axios.get(url + inputText)
             .then(res => {
                 if (res.data) {
                     setConverted(res.data);
@@ -65,7 +95,6 @@ const Converter = () => {
                         </div>
                     </div>
                 </Col>
-
                 <Col>
                     <button className='search-btn' type='submit' onClick={submitHandler} >
                         Search
@@ -74,10 +103,10 @@ const Converter = () => {
 
             </Row>
             <Row>
-                <Col md={{ span: 3, offset: 3 }}>
+                <Col md={{ span: 4, offset: 3 }}>
                     <ul className="list-group">
-                        {filtered.map(item => (
-                            <li className="list-group-item" onClick={onclickHandler} data-category={item} key={item}>{item}</li>
+                        {unique(filtered).map(item => (
+                            <li className="list-group-item" onClick={onclickHandler} data-category={item} key={item.id}>{item}</li>
                         ))}
                     </ul>
                 </Col>
@@ -89,8 +118,6 @@ const Converter = () => {
                 </Col>
 
             </Row>
-            
-
         </Container>
     );
 }
