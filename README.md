@@ -9,7 +9,7 @@ Indo-Aryan languages, also called Indic languages, subgroup of the Indo-Iranian 
 
 ## Indo Aryan Language converter
 You can convert words from any language to any other languages within following languages.
-###### **English, Hindi, Urdu, Nepali, Bengali, Marathi, Gujarati**
+###### **English, Hindi, Urdu, Bengali, Nepali, Bengali, Marathi, Gujarati**
 You can able to see the beautiful chart to find out the meaning in all Indo Aryan Languages.
 ### Converter
 ![Converter](https://user-images.githubusercontent.com/74798705/149571235-3c683f83-9f31-4fb0-952d-0a8e36b3ead9.png)
